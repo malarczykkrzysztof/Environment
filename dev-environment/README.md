@@ -8,8 +8,4 @@ docker compose down
   You should see in down left corner in VSC blue icons.
 3. Press bluee icons and chose attach ruining container. 
 
-Test
-
-kolejny test
-
 
