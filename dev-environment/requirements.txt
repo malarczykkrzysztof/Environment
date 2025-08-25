@@ -2,4 +2,7 @@ fastapi
 pydantic
 uvicorn
 redis
-debugpy
+pytest
+httpx
+ruff
+
