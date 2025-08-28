@@ -3,6 +3,9 @@ pydantic
 uvicorn
 redis
 pytest
+pytest-cov
+pytest-watch
 httpx
 ruff
+requests
 
