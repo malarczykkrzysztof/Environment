@@ -1,3 +1,4 @@
+version: "3.8"
 services:
   app:
     build: .
@@ -7,9 +8,23 @@ services:
       - 80:80
       - 5678:5678
     volumes:
-      - .:/code
+      - ./app:/code/app
     # depends_on:
     #   - redis
 
   # redis:
   #   image: redis:alpine
+
+  mongo:
+    image: mongo:7.0
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongoadmin 
+      MONGO_INITDB_ROOT_PASSWORD: LikeAndSubscribe
+    ports:
+      - 27017:27017
+    volumes:
+      - mongodata:/data/db
+
+volumes:
+  mongodata:
+    driver: local 

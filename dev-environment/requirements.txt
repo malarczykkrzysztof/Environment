@@ -8,4 +8,5 @@ pytest-watch
 httpx
 ruff
 requests
+pymongo
 
