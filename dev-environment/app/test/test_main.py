@@ -56,25 +56,6 @@ def mocked_database_fix2():
 #     ]
 #     assert response.json() == expected_result   
     
-# @patch ("app.main.Database")    
-# def test_users_all2(mocked_database_fix: Mock):
-#     database_instance = Mock()
-#     database_instance.get_all_users.return_value = [test_user1, test_user2] 
-#     mocked_database_fix.return_value = database_instance
-#     response = client.get("/user")
-#     assert response.status_code == 200
-#     expected_result = [
-#         {
-#         "first_name": "Jan", 
-#         "last_name": "Kowalski",
-#         "email": "Kowalski@Email.com"
-#         },
-#         {"first_name": "Piotr",
-#          "last_name": "Malik",
-#          "email": "Malik@Email.com"
-#         }
-#     ]
-#     assert response.json() == expected_result   
 
 def test_users_all3(mocked_database_fix2):
     response = client.get("/user")
