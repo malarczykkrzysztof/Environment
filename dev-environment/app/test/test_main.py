@@ -33,11 +33,7 @@ def mocked_database_fix2():
         mocked_database.return_value = database_instance
         yield mocked_database
 
-# def test_read_docs():
-#     response = client.get("/docs")
-#     assert response.status_code == 200
-#     assert "<title>FastAPI - Swagger UI</title>" in response.text
-    
+   
 # @patch ("app.main.Database")
 # def test_users_all(mocked_database_fix: Mock):
 #     mocked_database_fix.return_value.get_all_users.return_value = [test_user1, test_user2]
