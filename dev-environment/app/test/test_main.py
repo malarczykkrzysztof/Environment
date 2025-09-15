@@ -33,6 +33,7 @@ def mocked_database_fix2():
         mocked_database.return_value = database_instance
         yield mocked_database
 
+<<<<<<< HEAD
    
 # @patch ("app.main.Database")
 # def test_users_all(mocked_database_fix: Mock):
@@ -51,6 +52,8 @@ def mocked_database_fix2():
 #         }
 #     ]
 #     assert response.json() == expected_result   
+=======
+>>>>>>> 96edf2f (Removed commente ut1)
     
 
 def test_users_all3(mocked_database_fix2):
