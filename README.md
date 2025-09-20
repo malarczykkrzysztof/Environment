@@ -25,10 +25,11 @@ A simple FastAPI project with tests has also been implemented here.
 4. Select the container named /python-server.
 5. Install any additional necessary extensions inside the container.
 6. You are now ready to work inside the container.
-7. To stop the project on your host machine:
+7. To stop the project on your host machine: docker compose down
 
 
 ## Testing
+On caontainer in code/app
 
 - python -m pytest -vv
 - python -m pytest --cov=app -vv

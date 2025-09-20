@@ -23,11 +23,3 @@ def test_slinding_windows(arr, size_of_window, expected_result):
        
     result = my_structure.slinding_window(arr, size_of_window)
     assert result == expected_result
-
-
-# from app directory or from code
-# python -m pytest  ./tests/test_my_structure.py::test_slinding_windows -vv
-# python -m pytest --cov=app --cov-report=term-missing --cov-report=html -vv
-# python -m pytest --cov=app --cov-report=term-missing --cov-report=html -vv -k hashtag
-# from some directory
-#  ptw
