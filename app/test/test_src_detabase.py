@@ -121,9 +121,6 @@ def test_database_user_update_error (mocked_database_fix):
         database_object.user_update(user = test_user1)
     assert f"status_code=404, detail='User with {test_user1.email} not found in database" in str(e_info) 
     
-    
-    
-    
 def test_database_delete_user(mocked_database_fix):
     database_object = Database()
     mocked_user_data = Mock()
@@ -166,8 +163,6 @@ def mocked_collection_fix_error():
     mocked_user_data.modified_count = 1
     mocked_collection = Mock() 
     mocked_collection.insert_one.side_effect = DuplicateKeyError(error ="MockedError")
-    # mocked_collection.delete_one.return_value = mocked_user_data
-    # mocked_collection.replace_one.return_value = mocked_user_data  
     return mocked_collection
     
     

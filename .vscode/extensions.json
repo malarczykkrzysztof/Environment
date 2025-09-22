@@ -12,6 +12,7 @@
     "ms-python.vscode-pylance",
     "ms-python.vscode-python-envs",
     "njpwerner.autodocstring",
-    "zainchen.json"
+    "zainchen.json",
+    "ms-python.black-formatter"
   ]
 }
