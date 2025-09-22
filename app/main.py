@@ -42,3 +42,18 @@ def delete_all():
 def add_users()-> List[UserSafe]:  
     """Add user from list to database"""
     return Database().add_users()
+    
+# def create_index():
+#     client = MongoClient("mongodb://mongoadmin:LikeAndSubscribe@mongo:27017/")
+#     test_collection = client["data"]["users"]
+#     test_collection.create_index("email",unique = True)  
+    
+# def list_indexes():
+#     client = MongoClient("mongodb://mongoadmin:LikeAndSubscribe@mongo:27017/") 
+#     test_collection = client["data"]["users"]
+#     result = test_collection.list_indexes()
+#     for index in result:
+#         print (index)
+
+# create_index()
+# list_indexes()
